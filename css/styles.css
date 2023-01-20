@@ -430,7 +430,7 @@ header {
 }
 
 .footer-title {
-  color: var(--light);
+  color: var(--primary-white-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -843,7 +843,7 @@ header {
   border-radius: 4px;
   padding-left: 16px;
   padding-top: 8px;
-  color: var(--primary-white-color);
+  color: #FFFFFF;
   outline: none;
 }
 
