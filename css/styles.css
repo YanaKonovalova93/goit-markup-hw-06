@@ -629,6 +629,7 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 72px 24px 24px 24px;
 
   min-height: 576px;
   min-width: 408px;
@@ -674,10 +675,7 @@ header {
 
 .form {
   width: 360px;
-  padding-top: 72px;
-  padding-bottom: 24ps;
-
-  margin: 0 auto;
+  
   
 }
 
@@ -687,5 +685,98 @@ header {
   letter-spacing: 0.02em;
   line-height: 1.5;
   color: var(--dark);
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.form-field {
+  margin-bottom: 8px;
   
 }
+.form-wrap {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: currentColor;
+  transition: fill 250ms var(--timing-function);
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  
+  background-color: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+outline: none;
+padding-left: 38px;
+color: var(--dark);
+transition: border-color 250ms var(--timing-function);
+}
+
+.form-input:focus {
+border-color: var(--primary-brand);
+}
+.form-input:focus + .input-icon {
+  fill: var(--primary-brand);
+}
+.form .form-button {
+  display: block;
+  color: var(--primary-white-color);
+  background-color: var(--primary-brand);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+width: 169px;
+height: 56px;
+margin: 0 auto;
+
+  transition: background-color 250ms var(--timing-function);
+}
+
+.input-text {
+  display: inline-block;
+  color: #8E8F99;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  line-height: 1.17;
+  margin-bottom: 4px;
+}
+
+.modal-comment {
+  width: 100%;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+outline: none;
+padding-left: 16px;
+  padding-top: 8px;
+  resize: none;
+  transition: border-color 250ms var(--timing-function);
+}
+
+.modal-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 1.33;
+  color: rgba(117, 117, 117, 0.5);
+  
+}
+
+.modal-comment:focus {
+  border-color: var(--primary-brand);
+  }
