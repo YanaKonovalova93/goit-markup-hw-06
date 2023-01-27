@@ -41,6 +41,7 @@ img {
   height: auto;
 }
 
+
 body {
   background-color: var(--primary-white-color);
   color: var(--text);
@@ -49,6 +50,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+
+
 
 .container {
   margin: 0 auto;
@@ -691,7 +694,10 @@ header {
 
 .form-field {
   margin-bottom: 8px;
+  line-height: 1.17;
 }
+
+
 .form-wrap {
   position: relative;
 }
